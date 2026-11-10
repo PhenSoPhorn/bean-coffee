@@ -6,7 +6,7 @@ function SpacailCard({ specialItem, currency }) {
   console.log(specialItem);
   return (
     <div className="pl-8 pr-8 pt-4 pb-4">
-      <section className="flex flex-col sm:flex-row items-center gap-6 rounded-2xl border border-gray-100 bg-surface overflow-hidden  ">
+      <section className="flex flex-col sm:flex-row items-center gap-6 rounded-2xl border border-gray-100 bg-surface shadow-sm overflow-hidden  ">
         <div className="w-full sm:w-1/2 h-69 shrink-0">
           <img src={specialItem.image} alt="picture" className="h-full w-full  object-cover" />
         </div>
@@ -23,7 +23,7 @@ function SpacailCard({ specialItem, currency }) {
             ))}
           </div>
           <div className="mt-1 text-emerald-600 font-semibold text-lg">
-            <Price amount={specialItem.price} curentcy={currency} />
+            <Price amount={specialItem.price} currency={currency} />
           </div>
         </div>
       </section>

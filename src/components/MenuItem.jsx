@@ -22,7 +22,7 @@ function MenuItem({ item, currency }) {
       <div className="min-w-0 flex-1">
         <div className="flex  justify-between items-start ">
           <h2>{item.name}</h2>
-          <Price curentcy={currency} amount={item.price} isSoldOut={item.isSoldOut} />
+          <Price currency={currency} amount={item.price} isSoldOut={item.isSoldOut} />
         </div>
 
         <p className="text-xs  text-gray-500 mt-1 line-clamp-2">{item.description}</p>
@@ -40,8 +40,8 @@ function MenuItem({ item, currency }) {
         </div>
 
         <div className="flex justify-between mt-2">
-          <button className="border rounded-full px-1.5 bg-gray-200 " onClick={favorite}>
-            <Heart fill={isLike ? "#008000" : "#FF0000"} size={14} />
+          <button className="border rounded-full px-1.5 bg-surface " onClick={favorite}>
+            <Heart fill={isLike ? "#008000" : "#FFFFFF"} size={14} />
           </button>
           <Counter />
         </div>

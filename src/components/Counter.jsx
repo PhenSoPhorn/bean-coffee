@@ -10,7 +10,7 @@ function Counter() {
   }
 
   function add() {
-    setCount((prev) => prev + 2);
+    setCount((prev) => prev + 1);
   }
 
   return (
